@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>자동차 중고 가격 예측</title>
+        <style>
+            body {
+                background-color: lightblue;
+                background-image: url('http://economychosun.com/query/upload/353/20200621220348_riounhno.jpg');
+                background-position: 40% 40%;
+                background-repeat: no-repeat;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>자동차 중고 가격 예측</h1>
+        <form action = "http://localhost:5000/post" method = "POST">
+            <p>엠블럼 개수: <input type = "int" name = "symboling" /></p>
+            <p>휠 베이스 길이: <input type = "float" name = "wheelbase" /></p>
+            <p>전장: <input type = "float" name = "carlength" /></p>
+            <p>전폭: <input type = "float" name = "carwidth" /></p>
+            <p>전고: <input type = "float" name = "carheight" /></p>
+            <p>차량 중량: <input type = "int" name = "curbweight" /></p>
+            <p>엔진 크기: <input type = "int" name = "enginesize" /></p>
+            <p>실린더 내 경비(bore): <input type = "float" name = "boreratio" /></p>
+            <p>실린더 내 경비(stroke): <input type = "float" name = "stroke" /></p>
+            <p>실린더 압축비: <input type = "float" name = "compressionratio" /></p>
+            <p>마력: <input type = "int" name = "horsepower" /></p>
+            <p>최고RPM: <input type = "int" name = "peakrpm" /></p>
+            <p>도심 연비: <input type = "int" name = "citympg" /></p>
+            <p>고속 연비: <input type = "int" name = "highwaympg" /></p>
+            <p><input type = "submit" value = "저장" /></p>
+
+        </form>
+    </body>
+</html>
